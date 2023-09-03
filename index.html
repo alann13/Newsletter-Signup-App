@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Signup</title>
+  </head>
+  <body>
+    <main>
+      <div class="widget-text-content">
+        <h1>Stay updated</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <img src="/images/icon-list.svg" alt="icon of list item" />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li>
+            <img src="/images/icon-list.svg" alt="icon of list item" />
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li>
+            <img src="/images/icon-list.svg" alt="icon of list item" />
+            <p>And much more!</p>
+          </li>
+        </ul>
+
+        <form id="email-form">
+          <fieldset>
+            <label for="email-address">Email address</label>
+            <input
+              id="email-address"
+              name="email"
+              placeholder="email@company.com"
+              title="Valid email required"
+              type="text"
+            />
+          </fieldset>
+          <footer>
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </footer>
+        </form>
+      </div>
+      <picture>
+        <source
+          media="(min-width: 930px)"
+          srcset="/images/illustration-sign-up-desktop.svg"
+        />
+        <img
+          src="/images/illustration-sign-up-mobile.svg"
+          alt="cool illustration"
+        />
+      </picture>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

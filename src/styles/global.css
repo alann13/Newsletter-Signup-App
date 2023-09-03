@@ -1,0 +1,70 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+:root {
+  --dark-navy: #242742;
+  --pale-navy: #36384d;
+  --red: #ff6155;
+  --white: white;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  align-items: center;
+  background-color: var(--pale-navy);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+main {
+  background-color: var(--white);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+button,
+a {
+  background-color: var(--dark-navy);
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1.125rem 4.3rem;
+  width: 100%;
+}
+
+button:hover,
+a:hover {
+  background: linear-gradient(225deg, #ff6a3a 0%, #ff527b 100%);
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    align-items: baseline;
+    background-color: var(--white);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button,
+  a {
+    padding: 1.125rem 2.875rem;
+  }
+}
