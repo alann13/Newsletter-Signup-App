@@ -10,7 +10,7 @@ form.addEventListener('submit', async (e) => {
   const emailData = formData.get('email')
 
   if (emailData && emailData.match(emailRegex)) {
-    window.location.href = '/success/'
+    window.location.href = '/pages//success/'
   } else {
     const input = document.getElementById('email-address')
     input.classList.add('invalid')
